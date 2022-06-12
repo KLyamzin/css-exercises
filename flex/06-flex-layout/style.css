@@ -5,6 +5,11 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  /* my code */
+  display: flex;
+  /* justify-content: space-between;  */
+  flex-direction: column;
 }
 
 img {
@@ -24,4 +29,49 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+/* my code */
+li, a {
+list-style-type: none;
+text-decoration: none;
+color: rgb(116, 116, 116);
+/* font-size: ; */
+}
+
+
+.header, .footer{
+  /* align-self: center; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: baseline; */
+  /* padding: 8px; */
+  /* margin: 15px; */
+
+  padding: 16px;
+}
+.footer{
+  background-color: #eeeeee;
+}
+
+.left-links, .right-links{
+ display: flex;
+ /* align-items: center; */
+ /* justify-content: space-around; */
+ /* padding: 0 15px; */
+ gap: 10px;
+
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  /* solution css */
+  flex: 1;
+}
+
+button{
+  padding: 8px;
 }

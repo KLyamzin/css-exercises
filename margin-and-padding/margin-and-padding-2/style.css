@@ -1,27 +1,56 @@
-body {
-  background: #eee;
+.control {
+  /* background: #ffe0e0; */
   font-family: sans-serif;
+  border:double rgb(0, 0, 0) 2px;
+  /* height: auto;
+  width: auto; */
+  padding: 1px;
+
+}
+.panel.location{
+  border: purple 2px solid;
+  background-color: rgb(214, 185, 242);
+  /* display: flex; */
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.panel.content{
+  border: teal 2px solid;
+  background-color: rgb(190, 232, 218);
+  /* display: flex; */
+  padding: 5px;
+}
+.rack { /* panel location cells*/
+  border: 2px solid rgb(0, 0, 0);
+  /* background-color: #95e4fc; */
+  padding: 2px;
+  width: fit-content;
+  display: flex;
+  gap: 2px;
+
 }
 
-.card {
-  width: 400px;
-  background: #fff;
-  margin: 16px auto;
+.panel-body { /* panel port cells*/
+  border: 2px solid rgb(0, 0, 0);
+  /* background-color: rgba(242, 215, 180, 0.673); */
+  padding: 2px; 
+  display: flex;
+  flex-direction: column;
+  width:fit-content;
+  gap: 2px;
 }
-
-.title {
-  background: #e3f4ff;
+.rack div { /* panel location cells*/
+border: 1px solid rgb(23, 23, 23);
+background-color: gold;
+padding: 2px;
+/* margin: 2px; */
 }
-
-.content {
-  background: #e3f4ff;
-}
-
-.button-container {
-  background: #e3f4ff;
-}
-
-button {
-  background: white;
-  border: 1px solid #eee;
+/* .panel-cat{
+  align-self: flex-end; 
+}*/
+.panel-body div{ /* panel port cells*/
+  border: 1px solid rgb(23, 23, 23);
+  background-color: rgb(167, 219, 250);
+  padding: 2px;
+  /* margin: 2px; */
 }
